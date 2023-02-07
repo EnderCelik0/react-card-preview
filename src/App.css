@@ -1,0 +1,88 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-preview-container {
+  height: 500px;
+  width: 320px;
+  background: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+.preview-item {
+  background-image: url('/src/assets/images/drawers.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 200px;
+  width: 320px;
+}
+
+.preview-container {
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.preview-header {
+  color: hsl(217, 19%, 35%);
+}
+
+.preview-info {
+  font-size: 13px;
+  line-height: 1.6;
+  color: hsl(214, 17%, 51%);
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.person-flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.person-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.person-name {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.publish-date {
+  margin-top: 5px;
+  color: hsl(212, 23%, 69%);
+  font-size: 13px;
+}
+
+.share-img {
+  background-color: hsl(212, 23%, 89%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.share-img img {
+  width: 15px;
+  height: auto;
+}

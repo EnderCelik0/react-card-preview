@@ -1,7 +1,10 @@
 import './App.css';
+import CardPreview from './components/CardPreview';
 
-function App() {
-  return <div className='App'></div>;
+export default function App() {
+  return (
+    <div className='App'>
+      <CardPreview />
+    </div>
+  );
 }
-
-export default App;
