@@ -7,7 +7,7 @@
 }
 
 .card-preview-container {
-  height: 500px;
+  height: 540px;
   width: 320px;
   background: hsl(210, 46%, 95%);
   display: flex;
@@ -19,10 +19,9 @@
 .preview-item {
   background-image: url('/src/assets/images/drawers.jpg');
   background-size: cover;
-  background-position: center;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  height: 200px;
+  height: 100%;
   width: 320px;
 }
 
@@ -41,14 +40,18 @@
   color: hsl(214, 17%, 51%);
 }
 
-.person-info {
+.person-info,
+.social-section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.3s ease-in;
 }
 
-.person-flex {
+.person-flex,
+.social-flex {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -72,17 +75,84 @@
   font-size: 13px;
 }
 
-.share-img {
-  background-color: hsl(212, 23%, 89%);
+.share-img,
+.share-img-social {
+  background-color: hsl(212, 23%, 87%);
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 19%, 35%);
   border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
-.share-img img {
-  width: 15px;
-  height: auto;
+.share-img:hover,
+.share-img-social:hover {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(210, 46%, 95%);
+}
+
+.social-section {
+  background-color: hsl(217, 19%, 35%);
+  justify-content: space-around;
+}
+
+.text-share {
+  color: hsl(210, 46%, 95%);
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.github,
+.facebook,
+.twitter {
+  color: white;
+}
+
+.share-img-social:hover {
+  background-color: hsl(212, 23%, 69%);
+  color: hsl(217, 19%, 35%);
+}
+
+@media screen and (min-width: 768px) {
+  .card-preview-container {
+    width: 760px;
+    height: 290px;
+    flex-direction: row;
+  }
+
+  .preview-item {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    width: 90%;
+  }
+
+  .preview-header {
+    font-size: 20px;
+  }
+
+  .preview-container {
+    padding-right: 3rem;
+    padding-left: 2.8rem;
+    padding-bottom: 0;
+  }
+
+  .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .person-info {
+    justify-content: space-between;
+    margin: 0 4rem 0 3rem;
+  }
 }
