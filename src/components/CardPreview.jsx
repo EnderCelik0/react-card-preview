@@ -5,7 +5,7 @@ import personAvatar from '../assets/images/avatar-michelle.jpg';
 
 export default function CardPreview() {
   const [socialSection, setSocialSection] = useState(true);
-
+  const [isDesktop ,setIsDesktop] = useState(true)
   function toggleSocial() {
     setSocialSection((prev) => !prev);
   }
@@ -25,7 +25,7 @@ export default function CardPreview() {
             you make any room feel complete.
           </p>
         </div>
-        {socialSection ? (
+        {socialSection? (
           <div className='social-section'>
             <div className='social-flex'>
               <h4 className='text-share'>SHARE</h4>
