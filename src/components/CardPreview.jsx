@@ -4,8 +4,7 @@ import { useState } from 'react';
 import personAvatar from '../assets/images/avatar-michelle.jpg';
 
 export default function CardPreview() {
-  const [socialSection, setSocialSection] = useState(true);
-  const [isDesktop ,setIsDesktop] = useState(true)
+  const [socialSection, setSocialSection] = useState(false);
   function toggleSocial() {
     setSocialSection((prev) => !prev);
   }
