@@ -4,7 +4,7 @@ import { useState } from 'react';
 import personAvatar from '../assets/images/avatar-michelle.jpg';
 
 export default function CardPreview() {
-  const [socialSection, setSocialSection] = useState(false);
+  const [socialSection, setSocialSection] = useState(true);
 
   function toggleSocial() {
     setSocialSection((prev) => !prev);
@@ -33,10 +33,10 @@ export default function CardPreview() {
                 <a href='github.com/EnderCelik0'>
                   <BsGithub className='github' />
                 </a>
-                <a>
+                <a href='https://www.twitter.com/neysehllknk'>
                   <BsTwitter className='twitter' />
                 </a>
-                <a>
+                <a href='https://facebook.com'>
                   <AiFillFacebook className='facebook' />
                 </a>
               </div>
